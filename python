@@ -1,0 +1,46 @@
+# Taking input from the user
+number = int(input("Enter a number: "))
+
+# Using ternary operator to check if the number is even or odd
+result = "Even" if number % 2 == 0 else "Odd"
+print(f"The number {number} is {result}.")
+
+
+
+# Taking two numbers as input from the user
+num1 = input("Enter the first number: ")
+num2 = input("Enter the second number: ")
+
+# Swapping the numbers
+num1, num2 = num2, num1
+
+print(f"After swapping: First number = {num1}, Second number = {num2}")
+
+
+
+
+# Function to convert kilometers to miles
+def kilometers_to_miles(kilometers):
+    miles = kilometers * 0.621371
+    return miles
+
+# Taking input from the user
+kilometers_input = float(input("Enter distance in kilometers: "))
+miles_output = kilometers_to_miles(kilometers_input)
+print(f"{kilometers_input} kilometers is equal to {miles_output:.2f} miles.")
+
+
+
+
+# Function to calculate simple interest
+def calculate_simple_interest(principal, rate, time):
+    return (principal * rate * time) / 100
+
+# Given values
+principal_amount = 200  # Rs.
+rate_of_interest = 5    # percent per year
+time_period = 5         # years
+
+# Calculating simple interest
+simple_interest = calculate_simple_interest(principal_amount, rate_of_interest, time_period)
+print(f"The Simple Interest on Rs. {principal_amount} for {time_period} years at {rate_of_interest}% per year is: Rs. {simple_interest:.2f}")
